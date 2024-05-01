@@ -111,3 +111,25 @@ INSERT INTO quotes (ch_text, en_text, location_id, chapter_id) VALUES
 ('那天他约了西奈山医院那个既风趣又风骚的麻醉师','That day he had arranged to meet with the charming and seductive anesthetist from Mount Sinai Hospital', 26, 3),
 ('安娜·波兰斯基女士—— 一个波兰没落贵族的后裔—— 一块儿到大都会去听Leontyne Price的《阿依达》','Ms. Anna Polanski — a descendant of a declined Polish nobility — to go to the Metropolitan Opera together to listen to Leontyne Price perform ''Aida''', 27, 3),
 ('那次在卡耐基礼堂中，肖邦逝世百周年比赛会上，吕芳穿着一袭宝蓝的长裙，一头乌浓的长发，那首《英雄波兰舞曲》一奏完，双手潇洒地一扬，台下喝彩的声音，直持续了几分钟。台上那只最大的花篮便是他送的，有成百朵的白菊花','At the Chopin Bicentennial Competition at Carnegie Hall, Lü Fang wore a sapphire blue gown with her long, dark hair flowing down her back. After she finished playing the ''Heroic Polonaise'', she lifted her hands gracefully, and the applause from the audience continued for several minutes. The largest bouquet on the stage, with hundreds of white chrysanthemums, was sent by him', 30, 3);
+
+INSERT INTO posts (id, title, post_link, location_id) VALUES
+(1, 'Central Park 中央公园赏樱攻略', 'https://www.xiaohongshu.com/search_result/66296c820000000001030cbb', 1),
+(2, '13｜纽约66 things to do🧺去公园⛲️', 'https://www.xiaohongshu.com/search_result/662d52cc0000000003020593', 1),
+(3, 'central park | 中央公园的🌸好美', 'https://www.xiaohongshu.com/search_result/66108811000000001a0126fe', 1),
+(4, '220 Central Park South—全美最贵公寓', 'https://www.xiaohongshu.com/search_result/662d843c0000000001006fa3', 1),
+(5, '纽约周末活动安排上❤️', 'https://www.xiaohongshu.com/search_result/6629903900000000010317ad', 1),
+(6, 'Tavern on the green虽然很好吃但是不推荐', 'https://www.xiaohongshu.com/search_result/662d1987000000001c008552', 2),
+(7, '纽约｜又发现一家宝藏餐厅，特别有感觉😍', 'https://www.xiaohongshu.com/search_result/6606632400000000120358c1', 2),
+(8, '纽约探店｜打卡中央公园Tavern on the Green', 'https://www.xiaohongshu.com/search_result/66246ea7000000001c007975', 2),
+(9, '纽约| 中央公园里 的玻璃房餐厅', 'https://www.xiaohongshu.com/search_result/6377eb910000000022037816', 2),
+(10, '纽约中央公园午餐🌟 Tavern On the Green', 'https://www.xiaohongshu.com/search_result/6378913b000000000a03a17e', 2),
+(11, '📖哥大图书馆测评｜📍East Asian Library', 'https://www.xiaohongshu.com/search_result/655c0c560000000032038ac6', 3),
+(12, '0⃣️刀捡漏1929年梅兰芳访美记', 'https://www.xiaohongshu.com/search_result/6430afbe00000000130159bd', 3),
+(13, '哥大最美的是东亚系图书馆 不接受反驳！！！', 'https://www.xiaohongshu.com/search_result/6359d479000000001400f27e', 3),
+(14, '哥大图书馆测评🎓📖', 'https://www.xiaohongshu.com/search_result/651f11ef000000001a02062d', 3),
+(15, '北美东亚学术会议捞人：哥大东亚gradcon', 'https://www.xiaohongshu.com/search_result/6622960800000000040197cb', 3),
+(16, '这是一个用设计拯救NYU学生食堂的故事🦸‍♀️', 'https://www.xiaohongshu.com/search_result/647150a10000000013003f93', 4),
+(17, '纽约最“精彩”古着店｜西太后爱好者聚集地🪐', 'https://www.xiaohongshu.com/search_result/6459919a0000000013013d44', 4),
+(18, '纽约｜摩洛哥塔吉锅炖羊腿 汤汁拌饭香迷糊', 'https://www.xiaohongshu.com/search_result/660c3675000000001b00ec47', 4),
+(19, 'NYU附近｜St Marks餐厅全测评‼️（上）', 'https://www.xiaohongshu.com/search_result/625f850a00000000210395cb', 4),
+(20, '全纽约也找不出第二家这样的瑜伽馆', 'https://www.xiaohongshu.com/search_result/65b98729000000002c03f2b7', 4);
