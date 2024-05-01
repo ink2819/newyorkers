@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Chapter = require('../models/chapter'); // Assuming the model file is named 'chapter'
+const Chapter = require('../models/chapter'); 
 
-// GET all chapters
 router.get('/', async (req, res, next) => {
   try {
     let chapters = await Chapter.all();
@@ -12,8 +11,6 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-
-// GET the form for adding or editing a chapter
 router.get('/form', async (req, res, next) => {
   let templateVars = { title: 'New Yorkers || Chapters' }
   if (req.query.id) {
@@ -48,10 +45,9 @@ router.get('/edit', async (req, res, next) => {
   }
 });
 
-// POST or PUT a chapter via upsert
 router.post('/upsert', async (req, res, next) => {
   try {
-    console.log('body: ' + JSON.stringify(req.body)); // Logging the request body to the console
+    console.log('body: ' + JSON.stringify(req.body)); 
     let chapter = await Chapter.upsert(req.body);
     req.session.flash = {
       type: 'success',
