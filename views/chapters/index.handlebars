@@ -1,0 +1,10 @@
+<h1>Chapters</h1>
+<a href="/chapters/form">Create a new chapter</a>
+<ul>
+    {{#each chapters}}
+    <li>
+        <a href="/chapters/show/{{this.id}}">{{this.id}} - {{this.name}}</a>
+        <a href="/chapters/edit?id={{this.id}}">edit</a>
+    </li>
+    {{/each}}
+</ul>

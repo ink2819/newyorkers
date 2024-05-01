@@ -1,0 +1,28 @@
+ <h1>{{location.name}}</h1>
+</div>
+
+<div class="content">
+    <h2>Appears In:</h2>
+    {{#each chapters}}
+    <div class="chapter">
+        <h3>{{name}}</h3>
+        <a href="{{source_link}}" target="_blank">{{source}}</a>
+        {{#each quotes}}
+                <p class="quote">{{enText}}</p>
+                <p class="quote">{{chText}}</p>
+        {{/each}}
+    </div>
+    {{/each}}
+</div>
+
+<div class="social-media">
+    <h2>Open Social Media Feed for {{location.name}}</h2>
+    <div class="posts">
+        {{#each posts}}
+        <div class="post">
+            <a href="{{post_link}}" target="_blank">
+            <p>{{title}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>

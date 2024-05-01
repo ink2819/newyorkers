@@ -1,0 +1,28 @@
+<h1>{{#if location}}Edit Location{{else}}New Location{{/if}}</h1>
+
+<form action="/locations/upsert" method="post">
+  <input type="hidden" name="_csrf" value="{{_csrfToken}}">
+
+  {{#if location}}
+    <div>
+      <h2>Editing: {{location.name}}</h2>
+      <input type="hidden" name="id" value="{{location.id}}">
+    </div>
+  {{/if}}
+
+  <div>
+    <label for="name">Location Name:</label>
+    <input type="text" id="name" name="name" value="{{#if location}}{{location.name}}{{/if}}" required>
+  </div>
+
+  <div>
+    <label for="latitude">Latitude:</label>
+    <input type="text" id="latitude" name="latitude" value="{{#if location}}{{location.latitude}}{{/if}}" required>
+  </div>
+
+  <div>
+    <label for="longitude">Longitude:</label>
+    <input type="text" id="longitude" name="longitude" value="{{#if location}}{{location.longitude}}{{/if}}" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">{{#if location}}Update{{else}}Create{{/if}} Location</button>

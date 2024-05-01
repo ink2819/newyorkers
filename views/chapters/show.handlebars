@@ -1,0 +1,15 @@
+<h1>{{chapter.name}}</h1>
+<p>Source: <a href="{{chapter.source_link}}" target="_blank">{{chapter.source}}</a></p>
+</div>
+
+<div class="content">
+    {{#each locations}}
+    <div class="location">
+        <h2>{{name}}</h2>
+        {{#each quotes}}
+            <p>{{enText}}</p>
+            <p>{{chText}}</p><br><a href="/quotes/edit?id={{this.id}}">Edit Quote</a>
+        {{/each}}
+    </div>
+    {{/each}}
+</div>
