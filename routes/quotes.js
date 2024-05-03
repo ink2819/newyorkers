@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const Quotes = require('../models/quote'); // Adjust the path as necessary to your quotes model
+const Quotes = require('../models/quote'); 
 
-// GET all quotes
+
 router.get('/', async (req, res, next) => {
   try {
     let quotes = await Quotes.all();
@@ -12,7 +12,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-// GET the form for adding/editing a quote
+
 router.get('/form', async (req, res, next) => {
   let templateVars = { title: 'Add/Edit Quote' }
   if (req.query.id) {
@@ -28,7 +28,7 @@ router.get('/form', async (req, res, next) => {
   }
 });
 
-// POST/PUT quotes via upsert
+
 router.post('/upsert', async (req, res, next) => {
   try {
     if (req.body.id) {
@@ -47,7 +47,6 @@ router.post('/upsert', async (req, res, next) => {
   }
 });
 
-// GET a specific quote by ID
 router.get('/:id', async (req, res, next) => {
   try {
     let quote = await Quotes.get(req.params.id);

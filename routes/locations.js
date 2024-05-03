@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const Location = require('../models/location'); // Assuming the model is stored under models/location
+const Location = require('../models/location'); 
 const Post = require('../models/post');
 
-// GET all locations
+
 router.get('/', async (req, res, next) => {
   try {
     let locations = await Location.all();
@@ -13,7 +13,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-// GET the form for adding/editing a location
+
 router.get('/form', async (req, res, next) => {
   let templateVars = { title: 'New Yorkers || Locations' }
   if (req.query.id) {
@@ -29,10 +29,10 @@ router.get('/form', async (req, res, next) => {
   res.render('locations/form', templateVars);
 });
 
-// POST or PUT a location via upsert
+
 router.post('/upsert', async (req, res, next) => {
   try {
-    console.log('body: ' + JSON.stringify(req.body)); // Logging the request body to the console
+    console.log('body: ' + JSON.stringify(req.body)); 
     let newLocation = await Location.upsert(req.body);
     req.session.flash = {
       type: 'success',
@@ -70,13 +70,13 @@ router.get('/show/:id', async (req, res, next) => {
   try {
       const locationId = req.params.id;
       const details = await Location.getWithDetails(locationId);
-      const posts = await Post.findByLocationId(locationId); // Fetch posts related to the location
+      const posts = await Post.findByLocationId(locationId); 
 
       let templateVars = {
           title: 'New Yorkers || Locations',
           location: details.location,
           chapters: details.chapters,
-          posts: posts // Add posts to the template variables
+          posts: posts 
       };
       
       res.render('locations/show', templateVars);

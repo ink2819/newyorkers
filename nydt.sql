@@ -133,3 +133,10 @@ INSERT INTO posts (id, title, post_link, location_id) VALUES
 (18, '纽约｜摩洛哥塔吉锅炖羊腿 汤汁拌饭香迷糊', 'https://www.xiaohongshu.com/search_result/660c3675000000001b00ec47', 4),
 (19, 'NYU附近｜St Marks餐厅全测评‼️（上）', 'https://www.xiaohongshu.com/search_result/625f850a00000000210395cb', 4),
 (20, '全纽约也找不出第二家这样的瑜伽馆', 'https://www.xiaohongshu.com/search_result/65b98729000000002c03f2b7', 4);
+
+UPDATE chapters SET source_link = 'https://archive.org/details/twentiethcentury00chih' WHERE id = 1;
+UPDATE chapters SET source_link = 'https://play.google.com/store/books/details/Kuo_ch_ing_Tu_%E6%9D%9C%E5%9C%8B%E6%B8%85_and_Terence_Russell_%E7%BE%85%E5%BE%B7%E4%BB%81_%E5%8F%B0%E7%81%A3%E6%96%87%E5%AD%B8%E8%8B%B1%E8%AD%AF%E5%8F%A2%E5%88%8A?id=3egvDwAAQBAJ&hl=en_ZA&gl=US' WHERE id = 2;
+UPDATE chapters SET source_link = 'https://taipen.openmuseum.tw/muse/digi_object/eee7ef21f2890e8780722c6f9b22dadf' WHERE id = 3;
+UPDATE chapters SET source_link = 'https://play.google.com/store/books/details/Kuo_ch_ing_Tu_%E6%9D%9C%E5%9C%8B%E6%B8%85_and_Terence_Russell_%E7%BE%85%E5%BE%B7%E4%BB%81_%E5%8F%B0%E7%81%A3%E6%96%87%E5%AD%B8%E8%8B%B1%E8%AD%AF%E5%8F%A2%E5%88%8A?id=3egvDwAAQBAJ&hl=en_ZA&gl=US' WHERE id = 4;
+UPDATE chapters SET source_link = 'https://play.google.com/store/books/details/Kuo_ch_ing_Tu_%E6%9D%9C%E5%9C%8B%E6%B8%85_and_Terence_Russell_%E7%BE%85%E5%BE%B7%E4%BB%81_%E5%8F%B0%E7%81%A3%E6%96%87%E5%AD%B8%E8%8B%B1%E8%AD%AF%E5%8F%A2%E5%88%8A?id=3egvDwAAQBAJ&hl=en_ZA&gl=US' WHERE id = 5;
+UPDATE chapters SET source_link = 'https://play.google.com/store/books/details/Kuo_ch_ing_Tu_%E6%9D%9C%E5%9C%8B%E6%B8%85_and_Terence_Russell_%E7%BE%85%E5%BE%B7%E4%BB%81_%E5%8F%B0%E7%81%A3%E6%96%87%E5%AD%B8%E8%8B%B1%E8%AD%AF%E5%8F%A2%E5%88%8A?id=3egvDwAAQBAJ&hl=en_ZA&gl=US' WHERE id = 6;

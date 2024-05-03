@@ -44,7 +44,7 @@ const Chapter = {
     `;
     const { rows } = await db.getPool().query(query, [chapterId]);
 
-    // Group quotes by locations
+    
     const locationsWithQuotes = rows.reduce((acc, row) => {
       const { location_id, location_name, quote_id, en_text, ch_text } = row;
       if (!acc[location_id]) {
