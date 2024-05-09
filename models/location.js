@@ -7,8 +7,8 @@ exports.all = async () => {
 
 exports.add = async (location) => {
   const { rows } = await db.getPool()
-    .query("INSERT INTO locations(name, latitude, longitude) VALUES($1, $2, $3) RETURNING *",
-      [location.name, location.latitude, location.longitude]);
+    .query("INSERT INTO locations(id, name, latitude, longitude) VALUES($1, $2, $3, $4) RETURNING *",
+      [location.id, location.name, location.latitude, location.longitude]);
   return db.camelize(rows)[0];
 };
 
@@ -30,7 +30,7 @@ exports.getWithDetails = async (id) => {
     if (!acc[name]) {
       acc[name] = { name, source, source_link, quotes: [] };
     }
-    acc[name].quotes.push({ enText: en_text, chText: ch_text });
+    acc[name].quotes.push({ enText: en_text, chText: ch_text, id:id });
     return acc;
   }, {});
   return { location, chapters: Object.values(chapters) };

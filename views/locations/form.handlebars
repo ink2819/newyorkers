@@ -11,6 +11,11 @@
   {{/if}}
 
   <div>
+    <label for="id">Location ID:</label>
+    <input type="text" id="id" name="id" value="{{#if location}}{{location.id}}{{/if}}" required>
+  </div>
+
+  <div>
     <label for="name">Location Name:</label>
     <input type="text" id="name" name="name" value="{{#if location}}{{location.name}}{{/if}}" required>
   </div>
